@@ -1,16 +1,27 @@
 <template>
-    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="rounded-lg overflow-hidden">
-        <img :src="item" class="w-full" draggable="false">
+    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }"
+        class="rounded-lg overflow-hidden custom-carousel">
+        <img :src="item" class="w-full h-auto" draggable="false">
     </UCarousel>
 </template>
 
 <script setup lang="ts">
-const items = [
-    'https://picsum.photos/1920/1080?random=1',
-    'https://picsum.photos/1920/1080?random=2',
-    'https://picsum.photos/1920/1080?random=3',
-    'https://picsum.photos/1920/1080?random=4',
-    'https://picsum.photos/1920/1080?random=5',
-    'https://picsum.photos/1920/1080?random=6'
-]
+import img1 from '@/assets/images/europeia1.webp'
+import img2 from '@/assets/images/europeia2.webp'
+import img3 from '@/assets/images/europeia3.webp'
+
+const items = [img1, img2, img3]
 </script>
+
+<style scoped>
+.custom-carousel {
+    max-width: 800px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.custom-carousel img {
+    object-fit: cover;
+    height: 100%;
+}
+</style>
