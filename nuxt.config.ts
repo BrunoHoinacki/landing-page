@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [
-    'bootstrap/dist/css/bootstrap.min.css'
+    'bootstrap/dist/css/bootstrap.min.css',
+    '~/assets/css/global.css'
   ],
   build: {
     transpile: ['bootstrap']
@@ -10,10 +11,15 @@ export default defineNuxtConfig({
     head: {
       script: [
         {
-          src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js',
-          body: true
+          src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
         }
       ]
     }
-  }
+  },
+  plugins: [
+    '~/plugins/fontawesome.js'
+  ],
+  modules: [
+    '@nuxt/ui'
+  ]
 })

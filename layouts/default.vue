@@ -1,8 +1,14 @@
 <template>
-    <div>
-      <AppHeader />
-      <slot />
-      <AppFooter />
+  <div class="d-flex flex-column min-vh-100">
+    <AppHeader />
+    <div class="flex-grow-1">
+      <NuxtPage />
     </div>
-  </template>
-  
+    <AppFooter />
+  </div>
+</template>
+
+<script setup>
+import AppHeader from '~/components/AppHeader.vue'
+import AppFooter from '~/components/AppFooter.vue'
+</script>

@@ -4,6 +4,7 @@
       <h1 class="mb-4">Dicas para o Dia dos Namorados em Gramado</h1>
       <p class="lead">Descubra os melhores lugares e atividades para aproveitar com seu amor em Gramado.</p>
     </div>
+    <ImageCarousel />
     <div class="row mt-5">
       <div class="col-md-6">
         <h2>Pontos Turísticos</h2>
@@ -22,5 +23,6 @@
 </template>
 
 <script setup>
+import ImageCarousel from '~/components/ImageCarousel.vue'
 import ModalForm from '~/components/ModalForm.vue'
 </script>

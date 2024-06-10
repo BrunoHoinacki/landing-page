@@ -1,0 +1,34 @@
+/* assets/css/global.css */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .d-flex {
+    display: flex !important;
+  }
+  
+  .flex-column {
+    flex-direction: column !important;
+  }
+  
+  .min-vh-100 {
+    min-height: 100vh !important;
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1 !important;
+  }
+  
