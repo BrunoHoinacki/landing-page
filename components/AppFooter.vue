@@ -21,20 +21,5 @@
 </script>
 
 <style scoped>
-.footer {
-    background-color: #e75480;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-.footer a {
-    font-size: 1.5rem;
-}
-
-.footer p {
-    text-shadow: 2px 2px 4px #000000;
-}
+/* Remover estilos específicos do footer, pois eles estão no CSS global */
 </style>

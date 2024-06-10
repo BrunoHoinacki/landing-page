@@ -32,7 +32,7 @@ onMounted(() => {
 <style scoped>
 .custom-carousel {
     max-width: 800px;
-    height: 400px;
+    height: auto;
     margin: 0 auto;
 }
 

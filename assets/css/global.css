@@ -1,34 +1,89 @@
 /* assets/css/global.css */
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.min-vh-100 {
+  min-height: 100vh !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+/* Estilos específicos do header */
+.bg-header {
+  background-color: #e75480;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1rem 0;
+}
+
+.bg-header h1 {
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Media query para telas menores que 600px */
+@media (max-width: 600px) {
+  .bg-header {
+    padding: 0.5rem 0;
   }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+  .bg-header h1 {
+    font-size: 1.5rem;
   }
-  
-  #app {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+}
+
+/* Media query para telas menores que 400px */
+@media (max-width: 400px) {
+  .bg-header {
+    padding: 0.25rem 0;
   }
-  
-  .d-flex {
-    display: flex !important;
+
+  .bg-header h1 {
+    font-size: 1.5rem;
   }
-  
-  .flex-column {
-    flex-direction: column !important;
-  }
-  
-  .min-vh-100 {
-    min-height: 100vh !important;
-  }
-  
-  .flex-grow-1 {
-    flex-grow: 1 !important;
-  }
-  
+}
+
+/* Estilos específicos do footer */
+.bg-footer {
+  background-color: #e75480;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2.5rem;
+}
+
+.bg-footer a {
+  font-size: 1.5rem;
+}
+
+.bg-footer p {
+  text-shadow: 2px 2px 4px #000000;
+}
