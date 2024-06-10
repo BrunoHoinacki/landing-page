@@ -16,7 +16,8 @@
       </div>
     </div>
     <div class="text-center mt-5">
-      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalForm">Baixar eBook</button>
+      <button class="btn btn-primary romantic-button" data-bs-toggle="modal" data-bs-target="#modalForm">Baixar
+        eBook</button>
     </div>
     <ModalForm />
   </div>
@@ -39,3 +40,42 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container {
+  background-size: cover;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h1 {
+  color: #e75480;
+  font-family: 'Cursive', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.lead {
+  color: #333333;
+}
+
+h2 {
+  color: #e75480;
+  font-family: 'Cursive', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  color: #555555;
+}
+
+.romantic-button {
+  background-color: #e75480;
+  border-color: #e75480;
+  font-family: 'Cursive', sans-serif;
+}
+
+.romantic-button:hover {
+  background-color: #d43f6d;
+  border-color: #d43f6d;
+}
+</style>

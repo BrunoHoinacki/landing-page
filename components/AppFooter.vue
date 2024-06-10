@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-dark text-white p-3 mt-5">
+    <footer class="bg-footer text-white p-3 mt-5">
         <div class="container d-flex justify-content-between align-items-center">
             <p>&copy; 2024 Seu Nome ou Empresa. Todos os direitos reservados.</p>
             <div>
@@ -21,14 +21,21 @@
 </script>
 
 <style scoped>
-footer {
-    background-color: #343a40;
+.footer {
+    background-color: #e75480;
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px 0;
     margin-top: 40px;
 }
 
-a {
+.footer a {
     font-size: 1.5rem;
+}
+
+.footer p {
+    font-family: 'Cursive', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
 }
 </style>
