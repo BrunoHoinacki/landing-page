@@ -55,9 +55,11 @@ const pdfLink = ref('')
 
 watch(() => props.ebookType, (newVal) => {
     if (newVal === 'pontos') {
-        pdfLink.value = 'path-to-pontos-turisticos.pdf'
+        console.log('pontos');
+        pdfLink.value = '/pdf/pontos-turisticos-gramado.pdf';
     } else if (newVal === 'restaurantes') {
-        pdfLink.value = 'path-to-restaurantes-romanticos.pdf'
+        console.log('restaurantes');
+        pdfLink.value = '/pdf/restaurantes-romanticos-gramado.pdf';
     }
 })
 
