@@ -16,10 +16,3 @@
         </div>
     </footer>
 </template>
-
-<script setup>
-</script>
-
-<style scoped>
-/* Remover estilos específicos do footer, pois eles estão no CSS global */
-</style>

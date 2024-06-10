@@ -6,15 +6,15 @@
     </div>
     <ImageCarousel />
     <div class="row mt-5">
-      <div class="col-md-6 text-center">
+      <div class="col-md-6 text-center col-custom">
         <h2>Pontos Turísticos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae massa viverra dignissim.</p>
+        <p>Descubra os melhores pontos turísticos para aproveitar o Dia dos Namorados em Gramado</p>
         <button class="btn btn-romantic" data-bs-toggle="modal" data-bs-target="#modalForm"
           @click="setEbookType('pontos')">Baixar eBook Pontos Turísticos</button>
       </div>
-      <div class="col-md-6 text-center">
+      <div class="col-md-6 text-center col-custom">
         <h2>Restaurantes Românticos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae massa viverra dignissim.</p>
+        <p>Descubra os melhores restaurantes românticos para aproveitar o Dia dos Namorados em Gramado</p>
         <button class="btn btn-romantic" data-bs-toggle="modal" data-bs-target="#modalForm"
           @click="setEbookType('restaurantes')">Baixar eBook Restaurantes Românticos</button>
       </div>
@@ -63,5 +63,11 @@ p {
 .btn-romantic:hover {
   background-color: #d43f6d;
   border-color: #d43f6d;
+}
+
+@media (max-width: 600px) {
+  .col-custom {
+    margin-bottom: 1.5rem;
+  }
 }
 </style>
