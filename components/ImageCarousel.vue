@@ -10,13 +10,7 @@ import { ref, onMounted } from 'vue'
 import img1 from '@/assets/images/europeia1.webp'
 import img2 from '@/assets/images/europeia2.webp'
 import img3 from '@/assets/images/europeia3.webp'
-
-interface Carousel {
-    page: number;
-    pages: number;
-    select(page: number): void;
-    next(): void;
-}
+import type { Carousel } from '~/interfaces/interfaces' 
 
 const items = [img1, img2, img3]
 
