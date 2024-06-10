@@ -101,6 +101,6 @@ Consulte a [documentação de deployment](https://nuxt.com/docs/getting-started/
 
 Para mais informações, entre em contato:
 
-- **WhatsApp**: [Seu Número](https://wa.me/SeuNumero)
-- **Instagram**: [Seu Perfil](https://instagram.com/SeuPerfil)
-- **Site**: [Seu Site](https://seusite.com)
+- **WhatsApp**: [Seu Número](https://wa.me/51980456224)
+- **Instagram**: [Seu Perfil](https://instagram.com/this.brunohoinacki)
+- **Site**: [Seu Site](https://brunohoinacki.site)
