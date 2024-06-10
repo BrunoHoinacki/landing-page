@@ -28,20 +28,6 @@ export default defineNuxtConfig({
       script: [
         {
           src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
-        },
-        {
-          type: 'application/ld+json',
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Landing Page para o Dia dos Namorados em Gramado",
-            "url": "https://seusite.com",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://seusite.com/search?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          })
         }
       ]
     }
