@@ -88,7 +88,6 @@ const submitForm = () => {
 
 .modal-title {
     font-size: 2rem;
-    font-family: 'Cursive', sans-serif;
     color: #e75480;
 }
 
@@ -99,7 +98,6 @@ const submitForm = () => {
 }
 
 .form-label {
-    font-family: 'Cursive', sans-serif;
     color: #e75480;
 }
 
@@ -111,7 +109,6 @@ const submitForm = () => {
 .btn-romantic {
     background-color: #e75480;
     border-color: #e75480;
-    font-family: 'Cursive', sans-serif;
     color: white;
 }
 

@@ -19,7 +19,6 @@
 }
 
 .header h1 {
-    font-family: 'Cursive', sans-serif;
     text-shadow: 2px 2px 4px #000000;
 }
 </style>

@@ -38,7 +38,6 @@ const setEbookType = (type) => {
 <style scoped>
 h1 {
   color: #e75480;
-  font-family: 'Cursive', sans-serif;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -48,7 +47,6 @@ h1 {
 
 h2 {
   color: #e75480;
-  font-family: 'Cursive', sans-serif;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -59,7 +57,6 @@ p {
 .btn-romantic {
   background-color: #e75480;
   border-color: #e75480;
-  font-family: 'Cursive', sans-serif;
   color: white;
 }
 
