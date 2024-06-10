@@ -26,3 +26,16 @@
 import ImageCarousel from '~/components/ImageCarousel.vue'
 import ModalForm from '~/components/ModalForm.vue'
 </script>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Dicas para o Dia dos Namorados em Gramado',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Descubra os melhores lugares e atividades para aproveitar o Dia dos Namorados em Gramado com nosso guia completo.' }
+      ]
+    }
+  }
+}
+</script>
