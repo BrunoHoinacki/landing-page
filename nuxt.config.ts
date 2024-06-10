@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         { name: 'author', content: 'Seu Nome ou Empresa' },
         { property: 'og:title', content: 'Dia dos Namorados em Gramado' },
         { property: 'og:description', content: 'Descubra os melhores lugares e atividades para aproveitar o Dia dos Namorados em Gramado com nosso guia completo.' },
-        { property: 'og:image', content: '/path-to-your-image.jpg' },
+        { property: 'og:image', content: '/images/preview.jpg' },
         { property: 'og:url', content: 'https://seusite.com' },
         { property: 'og:type', content: 'website' }
       ],

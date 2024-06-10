@@ -6,48 +6,36 @@
     </div>
     <ImageCarousel />
     <div class="row mt-5">
-      <div class="col-md-6">
+      <div class="col-md-6 text-center">
         <h2>Pontos Turísticos</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae massa viverra dignissim.</p>
+        <button class="btn btn-romantic" data-bs-toggle="modal" data-bs-target="#modalForm"
+          @click="setEbookType('pontos')">Baixar eBook Pontos Turísticos</button>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 text-center">
         <h2>Restaurantes Românticos</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae massa viverra dignissim.</p>
+        <button class="btn btn-romantic" data-bs-toggle="modal" data-bs-target="#modalForm"
+          @click="setEbookType('restaurantes')">Baixar eBook Restaurantes Românticos</button>
       </div>
     </div>
-    <div class="text-center mt-5">
-      <button class="btn btn-primary romantic-button" data-bs-toggle="modal" data-bs-target="#modalForm">Baixar
-        eBook</button>
-    </div>
-    <ModalForm />
+    <ModalForm :ebookType="ebookType" />
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import ImageCarousel from '~/components/ImageCarousel.vue'
 import ModalForm from '~/components/ModalForm.vue'
-</script>
 
-<script>
-export default {
-  head() {
-    return {
-      title: 'Dicas para o Dia dos Namorados em Gramado',
-      meta: [
-        { hid: 'description', name: 'description', content: 'Descubra os melhores lugares e atividades para aproveitar o Dia dos Namorados em Gramado com nosso guia completo.' }
-      ]
-    }
-  }
+const ebookType = ref('')
+
+const setEbookType = (type) => {
+  ebookType.value = type
 }
 </script>
 
 <style scoped>
-.container {
-  background-size: cover;
-  padding: 20px;
-  border-radius: 15px;
-}
-
 h1 {
   color: #e75480;
   font-family: 'Cursive', sans-serif;
@@ -68,13 +56,14 @@ p {
   color: #555555;
 }
 
-.romantic-button {
+.btn-romantic {
   background-color: #e75480;
   border-color: #e75480;
   font-family: 'Cursive', sans-serif;
+  color: white;
 }
 
-.romantic-button:hover {
+.btn-romantic:hover {
   background-color: #d43f6d;
   border-color: #d43f6d;
 }
