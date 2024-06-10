@@ -102,5 +102,5 @@ Consulte a [documentação de deployment](https://nuxt.com/docs/getting-started/
 Para mais informações, entre em contato:
 
 - **WhatsApp**: [(51) 9 8045-6224](https://wa.me/5551980456224)
-- **Instagram**: [@this.brunohoinacki](https://instagram.com/this.brunohoinacki)
-- **Site**: [Site](https://brunohoinacki.site)
+- **Instagram**: [@this.brunohoinacki](https://www.instagram.com/this.bruno_hoinacki/)
+- **Site**: [https://www.brunohoinacki.site/](https://brunohoinacki.site)
