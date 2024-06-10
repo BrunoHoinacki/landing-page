@@ -1,10 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Landing Page para o Dia dos Namorados
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este é um projeto de landing page genérica para o Dia dos Namorados, desenvolvido com Nuxt 3, Bootstrap e Nuxt/UI. A página oferece dicas sobre Gramado e inclui um formulário para baixar um eBook, com ícones de redes sociais no rodapé.
+
+## Tecnologias Utilizadas
+
+- [Nuxt 3](https://nuxt.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Nuxt/UI](https://ui.nuxtjs.org/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## Setup
 
-Make sure to install the dependencies:
+Certifique-se de instalar as dependências:
 
 ```bash
 # npm
@@ -20,9 +27,9 @@ yarn install
 bun install
 ```
 
-## Development Server
+## Servidor de Desenvolvimento
 
-Start the development server on `http://localhost:3000`:
+Inicie o servidor de desenvolvimento em `http://localhost:3000`:
 
 ```bash
 # npm
@@ -38,9 +45,9 @@ yarn dev
 bun run dev
 ```
 
-## Production
+## Produção
 
-Build the application for production:
+Construa a aplicação para produção:
 
 ```bash
 # npm
@@ -56,7 +63,7 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+Visualize a build de produção localmente:
 
 ```bash
 # npm
@@ -72,4 +79,28 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Consulte a [documentação de deployment](https://nuxt.com/docs/getting-started/deployment) para mais informações.
+
+## Estrutura do Projeto
+
+- `components/`: Componentes reutilizáveis como `AppHeader`, `AppFooter`, `ModalForm` e `ImageCarousel`.
+- `layouts/`: Layouts para as páginas, incluindo o layout padrão (`default.vue`).
+- `pages/`: Páginas do projeto, incluindo a página inicial (`index.vue`).
+- `plugins/`: Plugins para configurar bibliotecas como Font Awesome.
+- `public/`: Arquivos estáticos como o CSS do Bootstrap.
+- `assets/`: Arquivos processados pelo Nuxt, como arquivos CSS globais.
+
+## Funcionalidades
+
+- **Header e Footer**: Componentes reutilizáveis para o cabeçalho e rodapé da página.
+- **Modal Form**: Um formulário modal para coletar informações dos usuários e permitir o download de um eBook.
+- **Carrossel de Imagens**: Um carrossel de imagens usando Nuxt/UI.
+- **Ícones de Redes Sociais**: Ícones de WhatsApp, Instagram e um ícone de globo para o site, utilizando Font Awesome.
+
+## Contato
+
+Para mais informações, entre em contato:
+
+- **WhatsApp**: [Seu Número](https://wa.me/SeuNumero)
+- **Instagram**: [Seu Perfil](https://instagram.com/SeuPerfil)
+- **Site**: [Seu Site](https://seusite.com)
