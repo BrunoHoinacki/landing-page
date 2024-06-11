@@ -23,6 +23,7 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' }
       ],
       link: [
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://seusite.com' }
       ],
@@ -34,7 +35,7 @@ export default defineNuxtConfig({
     }
   },
   plugins: [
-    '~/plugins/fontawesome.js'
+    //
   ],
   modules: [
     '@nuxt/ui'

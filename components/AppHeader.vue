@@ -5,11 +5,10 @@
         </div>
     </header>
 </template>
+
 <style scoped>
 .bg-header {
-    background-color: #e75480;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom, #e75480, rgba(231, 84, 128, 0.212));
     color: white;
     padding: 1rem 0;
 }

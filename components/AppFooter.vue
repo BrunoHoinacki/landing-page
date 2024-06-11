@@ -5,13 +5,13 @@
             <p class="small mb-2 mb-md-0">&copy; 2024 Seu Nome ou Empresa. Todos os direitos reservados.</p>
             <div>
                 <a href="https://wa.me/SeuNumero" target="_blank" class="text-white me-3">
-                    <font-awesome-icon icon="fa-brands fa-whatsapp" />
+                    <i class="fab fa-whatsapp"></i>
                 </a>
                 <a href="https://instagram.com/SeuPerfil" target="_blank" class="text-white me-3">
-                    <font-awesome-icon icon="fa-brands fa-instagram" />
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://seusite.com" target="_blank" class="text-white">
-                    <font-awesome-icon icon="fa-solid fa-globe" />
+                    <i class="fas fa-globe"></i>
                 </a>
             </div>
         </div>
@@ -20,7 +20,7 @@
 
 <style>
 .bg-footer {
-    background-color: #e75480;
+    background: linear-gradient(to top, #e75480, rgba(231, 84, 128, 0.212));
     background-size: cover;
     background-position: center;
     color: white;

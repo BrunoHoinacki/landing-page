@@ -10,13 +10,17 @@
         <h2>Pontos Turísticos</h2>
         <p>Descubra os melhores pontos turísticos para aproveitar o Dia dos Namorados em Gramado</p>
         <button class="btn btn-romantic" data-bs-toggle="modal" data-bs-target="#modalForm"
-          @click="setEbookType('pontos')">Baixar eBook Pontos Turísticos</button>
+          @click="setEbookType('pontos')">
+          <i class="fas fa-download"></i> Baixar eBook Pontos Turísticos
+        </button>
       </div>
       <div class="col-md-6 text-center col-custom">
         <h2>Restaurantes Românticos</h2>
         <p>Descubra os melhores restaurantes românticos para aproveitar o Dia dos Namorados em Gramado</p>
         <button class="btn btn-romantic" data-bs-toggle="modal" data-bs-target="#modalForm"
-          @click="setEbookType('restaurantes')">Baixar eBook Restaurantes Românticos</button>
+          @click="setEbookType('restaurantes')">
+          <i class="fas fa-download"></i> Baixar eBook Restaurantes Românticos
+        </button>
       </div>
     </div>
     <ModalForm :ebookType="ebookType" />
@@ -38,7 +42,7 @@ const setEbookType = (type) => {
 <style scoped>
 h1 {
   color: #e75480;
-  text-shadow: 2px 2px 4px #000000;
+  font-weight: 700;
 }
 
 .lead {
@@ -47,7 +51,7 @@ h1 {
 
 h2 {
   color: #e75480;
-  text-shadow: 2px 2px 4px #000000;
+  font-weight: 700;
 }
 
 p {
@@ -63,6 +67,10 @@ p {
 .btn-romantic:hover {
   background-color: #d43f6d;
   border-color: #d43f6d;
+}
+
+.btn-romantic i {
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 600px) {
