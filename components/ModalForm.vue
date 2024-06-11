@@ -1,6 +1,6 @@
 <template>
     <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog custom-modal-dialog">
             <div class="modal-content custom-modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalFormLabel">Baixar eBook</h5>
@@ -61,10 +61,8 @@ const pdfLink = ref('')
 
 watch(() => props.ebookType, (newVal) => {
     if (newVal === 'pontos') {
-        console.log('pontos');
         pdfLink.value = '/pdf/pontos-turisticos-gramado.pdf';
     } else if (newVal === 'restaurantes') {
-        console.log('restaurantes');
         pdfLink.value = '/pdf/restaurantes-romanticos-gramado.pdf';
     }
 })
@@ -109,6 +107,12 @@ const submitForm = async () => {
     background-color: #ffe6e6;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 1rem);
 }
 
 .modal-header {
