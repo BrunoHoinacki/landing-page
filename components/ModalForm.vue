@@ -32,7 +32,8 @@
                     </div>
                     <div v-else class="text-center">
                         <p>Obrigado por baixar o eBook, Feliz dia dos namorados <i class="fas fa-heart"></i></p>
-                        <a :href="pdfLink" download class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Download PDF</a>
+                        <a :href="pdfLink" download class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Download
+                            PDF</a>
                     </div>
                 </div>
             </div>
@@ -77,15 +78,29 @@ onMounted(() => {
     }
 })
 
-const submitForm = () => {
-    // Lógica para processar o formulário
-    // Exemplo: enviar os dados para um servidor
+const submitForm = async () => {
+    try {
+        const response = await fetch('/api/saveForm', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(form.value),
+        });
 
-    // Simulação de envio bem-sucedido
-    setTimeout(() => {
-        fileAvailable.value = true
-    }, 1000)
-}
+        if (response.ok) {
+            // Simulação de envio bem-sucedido
+            setTimeout(() => {
+                fileAvailable.value = true;
+            }, 1000);
+        } else {
+            console.error('Erro ao enviar os dados:', await response.json());
+        }
+    } catch (error) {
+        console.error('Erro ao enviar os dados:', error);
+    }
+};
+
 </script>
 
 <style scoped>
