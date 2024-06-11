@@ -89,6 +89,7 @@ Consulte a [documentação de deployment](https://nuxt.com/docs/getting-started/
 - `plugins/`: Plugins para configurar bibliotecas como Font Awesome.
 - `public/`: Arquivos estáticos como o CSS do Bootstrap.
 - `assets/`: Arquivos processados pelo Nuxt, como arquivos CSS globais.
+- `server/`: Arquivos de comunicacao da API como `api/saveForm`.
 
 ## Funcionalidades
 
