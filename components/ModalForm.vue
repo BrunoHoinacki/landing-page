@@ -7,27 +7,32 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form @submit.prevent="submitForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nome</label>
-                            <input type="text" class="form-control custom-input" id="name" v-model="form.name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control custom-input" id="email" v-model="form.email"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Celular</label>
-                            <input type="text" class="form-control custom-input" id="phone" v-model="form.phone"
-                                required>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-romantic">Baixar</button>
-                        </div>
-                    </form>
-                    <div v-if="fileAvailable" class="text-center mt-3">
-                        <a :href="pdfLink" download class="btn btn-secondary">Download PDF</a>
+                    <div v-if="!fileAvailable">
+                        <form @submit.prevent="submitForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control custom-input" id="name" v-model="form.name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control custom-input" id="email" v-model="form.email"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Celular</label>
+                                <input type="text" class="form-control custom-input" id="phone" v-model="form.phone"
+                                    required>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-romantic"><i class="fas fa-download"></i>
+                                    Baixar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div v-else class="text-center">
+                        <p>Obrigado por baixar o eBook, Feliz dia dos namorados <i class="fas fa-heart"></i></p>
+                        <a :href="pdfLink" download class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Download PDF</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +41,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 
 const props = defineProps({
     ebookType: {
@@ -60,6 +65,15 @@ watch(() => props.ebookType, (newVal) => {
     } else if (newVal === 'restaurantes') {
         console.log('restaurantes');
         pdfLink.value = '/pdf/restaurantes-romanticos-gramado.pdf';
+    }
+})
+
+onMounted(() => {
+    const phoneInput = document.getElementById('phone')
+    if (phoneInput) {
+        IMask(phoneInput, {
+            mask: '+{55} (00) 00000-0000'
+        })
     }
 })
 
@@ -89,6 +103,7 @@ const submitForm = () => {
 .modal-title {
     font-size: 2rem;
     color: #e75480;
+    font-weight: 700;
 }
 
 .btn-close {

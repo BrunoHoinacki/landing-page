@@ -30,6 +30,10 @@ export default defineNuxtConfig({
       script: [
         {
           src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+        },
+        {
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/imask/6.2.2/imask.min.js',
+          defer: true
         }
       ]
     }

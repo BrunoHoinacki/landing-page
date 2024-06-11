@@ -1,7 +1,7 @@
 <template>
     <header class="bg-header text-white p-2">
         <div class="container">
-            <h1>Dia dos Namorados em Gramado</h1>
+            <h1><i class="fas fa-heart"></i> Dia dos Namorados em Gramado <i class="fas fa-heart"></i></h1>
         </div>
     </header>
 </template>
@@ -16,6 +16,7 @@
 .bg-header h1 {
     text-align: center;
     font-size: 2rem;
+    font-weight: 700;
     text-shadow: 2px 2px 4px #000000;
 }
 
