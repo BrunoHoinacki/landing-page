@@ -96,6 +96,8 @@ Consulte a [documentação de deployment](https://nuxt.com/docs/getting-started/
 - **Modal Form**: Um formulário modal para coletar informações dos usuários e permitir o download de um eBook.
 - **Carrossel de Imagens**: Um carrossel de imagens usando Nuxt/UI.
 - **Ícones de Redes Sociais**: Ícones de WhatsApp, Instagram e um ícone de globo para o site, utilizando Font Awesome.
+- **Integração com Firebase**: Salva dados do formulário no Firestore do Firebase, permitindo coletar e armazenar informações de contato dos usuários.
+- **Hospedagem na Vercel**: Hospedagem 100% Free na vercel.
 
 ## Contato
 
